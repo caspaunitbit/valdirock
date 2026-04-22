@@ -2,8 +2,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --red: #e8001c;
-  --red-dark: #b50016;
+  --red: #0ea5e9;
+  --red-dark: #0284c7;
   --black: #0a0a0a;
   --dark: #111111;
   --dark2: #1a1a1a;
@@ -220,8 +220,8 @@ p { color: #aaa; font-size: 0.95rem; }
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(232,0,28,0.22) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(232,0,28,0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(14,165,233,0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(14,165,233,0.1) 0%, transparent 60%),
     rgba(0,0,0,0.62);
 }
 .hero-bg::after {
@@ -365,11 +365,11 @@ p { color: #aaa; font-size: 0.95rem; }
   position: relative;
   transition: border-color var(--transition), transform var(--transition);
 }
-.event-card:hover { border-color: rgba(232,0,28,0.4); transform: translateY(-3px); }
+.event-card:hover { border-color: rgba(14,165,233,0.4); transform: translateY(-3px); }
 .event-card.featured {
   grid-column: span 2;
-  border-color: rgba(232,0,28,0.3);
-  background: linear-gradient(135deg, rgba(232,0,28,0.08) 0%, var(--dark2) 60%);
+  border-color: rgba(14,165,233,0.3);
+  background: linear-gradient(135deg, rgba(14,165,233,0.08) 0%, var(--dark2) 60%);
 }
 .event-badge {
   position: absolute;
@@ -468,7 +468,7 @@ p { color: #aaa; font-size: 0.95rem; }
 }
 .tariffa.highlight {
   border-color: var(--red);
-  background: rgba(232,0,28,0.08);
+  background: rgba(14,165,233,0.08);
 }
 .tariffa strong { font-size: 0.8rem; color: #aaa; }
 .prezzo {
@@ -569,8 +569,8 @@ textarea { resize: vertical; min-height: 120px; }
 .social-link:hover { color: var(--white); border-color: rgba(255,255,255,0.4); }
 
 .membership-card {
-  background: linear-gradient(135deg, rgba(232,0,28,0.12), rgba(232,0,28,0.04));
-  border: 1px solid rgba(232,0,28,0.3);
+  background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(14,165,233,0.04));
+  border: 1px solid rgba(14,165,233,0.3);
   border-radius: var(--radius);
   padding: 24px;
 }
