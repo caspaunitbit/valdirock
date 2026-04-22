@@ -612,15 +612,18 @@ textarea { resize: vertical; min-height: 120px; }
 
 /* Backdrop per menu mobile */
 .nav-backdrop {
-  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.6);
   z-index: 98;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
-.nav-backdrop.open { opacity: 1; }
+.nav-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 @media (max-width: 680px) {
   .section { padding: 72px 0; }
@@ -642,7 +645,7 @@ textarea { resize: vertical; min-height: 120px; }
     visibility: hidden;
   }
   .nav-links.open { transform: translateX(0); visibility: visible; }
-  .nav-backdrop { display: block; }
+
 
   .burger { display: flex; z-index: 101; position: relative; }
   .burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }

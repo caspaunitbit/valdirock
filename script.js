@@ -15,7 +15,10 @@ function openMenu() {
   burger.classList.add('active');
   navLinks.classList.add('open');
   backdrop.classList.add('open');
+  // blocca scroll su desktop e iOS
   document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
 }
 
 function closeMenu() {
@@ -23,6 +26,8 @@ function closeMenu() {
   navLinks.classList.remove('open');
   backdrop.classList.remove('open');
   document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.width = '';
 }
 
 burger.addEventListener('click', () => {
