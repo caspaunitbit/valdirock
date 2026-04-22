@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sala Prove – Valdirock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">VALDIROCK</a>
+      <button class="burger" id="burger" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Chi siamo</a></li>
+        <li><a href="eventi.html">Eventi</a></li>
+        <li><a href="salaprove.html" class="active">Sala Prove</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="contatti.html" class="btn-nav">Iscriviti</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <span class="tag">Sala Prove</span>
+      <h1>Il tuo spazio<br>per suonare.</h1>
+      <p>Attrezzata, acustica, prenotabile online.</p>
+    </div>
+  </div>
+
+  <!-- SALA PROVE -->
+  <section class="section sala">
+    <div class="container">
+      <div class="sala-grid">
+        <div class="sala-text">
+          <p>La nostra sala prove è attrezzata con strumenti professionali e un impianto PA completo. Disponibile per soci e band esterne a tariffe convenzionate.</p>
+          <ul class="sala-features">
+            <li><span class="icon">🥁</span> Batteria acustica + pad elettronico</li>
+            <li><span class="icon">🎸</span> Amplificatori guitar & bass</li>
+            <li><span class="icon">🎤</span> Impianto PA con monitor</li>
+            <li><span class="icon">🔊</span> Trattamento acustico</li>
+            <li><span class="icon">🎛️</span> Mixer e DI box</li>
+            <li><span class="icon">📅</span> Prenotazione online/WhatsApp</li>
+          </ul>
+          <div class="tariffe">
+            <h4>Tariffe</h4>
+            <div class="tariffe-grid">
+              <div class="tariffa">
+                <strong>Soci Valdirock</strong>
+                <span class="prezzo">8 €<small>/h</small></span>
+              </div>
+              <div class="tariffa highlight">
+                <strong>Band esterne</strong>
+                <span class="prezzo">15 €<small>/h</small></span>
+              </div>
+              <div class="tariffa">
+                <strong>Abbonamento mensile</strong>
+                <span class="prezzo">60 €<small>/mese</small></span>
+              </div>
+            </div>
+          </div>
+          <a href="contatti.html" class="btn-primary">Prenota la sala</a>
+        </div>
+        <div class="sala-visual">
+          <div class="sala-placeholder">
+            <span>🎸</span>
+            <p>Foto sala prove</p>
+          </div>
+          <div class="sala-orari">
+            <h4>Orari disponibilità</h4>
+            <table>
+              <tr><td>Lun – Ven</td><td>16:00 – 23:00</td></tr>
+              <tr><td>Sabato</td><td>10:00 – 23:00</td></tr>
+              <tr><td>Domenica</td><td>10:00 – 22:00</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">VALDIROCK</span>
+        <p>Associazione Musicale di Valdidentro<br>C.F. XXXXXXXXXXXXXXXXXX · APS</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Chi siamo</a>
+        <a href="eventi.html">Eventi</a>
+        <a href="salaprove.html">Sala Prove</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+      <p class="footer-copy">© 2025 Valdirock – Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

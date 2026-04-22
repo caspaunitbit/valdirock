@@ -1,40 +1,39 @@
-// Navbar scroll effect
+// Navbar scroll effect (solo su homepage con hero)
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
-});
+if (!navbar.classList.contains('scrolled')) {
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+}
 
-// Mobile burger menu
+// Mobile burger menu + backdrop
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('nav-links');
+const backdrop = document.getElementById('nav-backdrop');
+
+function openMenu() {
+  burger.classList.add('active');
+  navLinks.classList.add('open');
+  backdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+  burger.classList.remove('active');
+  navLinks.classList.remove('open');
+  backdrop.classList.remove('open');
+  document.body.style.overflow = '';
+}
 
 burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  navLinks.classList.toggle('open');
+  navLinks.classList.contains('open') ? closeMenu() : openMenu();
 });
+
+backdrop.addEventListener('click', closeMenu);
 
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('active');
-    navLinks.classList.remove('open');
-  });
+  link.addEventListener('click', closeMenu);
 });
-
-// Active nav link on scroll
-const sections = document.querySelectorAll('section[id]');
-const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navItems.forEach(a => {
-        a.style.color = a.getAttribute('href') === `#${entry.target.id}` ? '#ffffff' : '';
-      });
-    }
-  });
-}, { threshold: 0.4 });
-
-sections.forEach(s => observer.observe(s));
 
 // Fade-in on scroll
 const fadeEls = document.querySelectorAll('.about-card, .event-card, .tariffa, .info-block');
@@ -57,18 +56,19 @@ fadeEls.forEach(el => {
 
 // Contact form
 const form = document.getElementById('contactForm');
-const formNote = document.getElementById('formNote');
-
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Invio in corso...';
-  btn.disabled = true;
-  setTimeout(() => {
-    formNote.textContent = '✓ Messaggio inviato! Ti risponderemo al più presto.';
-    formNote.className = 'form-note success';
-    form.reset();
-    btn.textContent = 'Invia messaggio';
-    btn.disabled = false;
-  }, 1200);
-});
+if (form) {
+  const formNote = document.getElementById('formNote');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Invio in corso...';
+    btn.disabled = true;
+    setTimeout(() => {
+      formNote.textContent = '✓ Messaggio inviato! Ti risponderemo al più presto.';
+      formNote.className = 'form-note success';
+      form.reset();
+      btn.textContent = 'Invia messaggio';
+      btn.disabled = false;
+    }, 1200);
+  });
+}

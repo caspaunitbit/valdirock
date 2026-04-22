@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti – Valdirock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">VALDIROCK</a>
+      <button class="burger" id="burger" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Chi siamo</a></li>
+        <li><a href="eventi.html">Eventi</a></li>
+        <li><a href="salaprove.html">Sala Prove</a></li>
+        <li><a href="contatti.html" class="active">Contatti</a></li>
+        <li><a href="contatti.html" class="btn-nav">Iscriviti</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <span class="tag">Contatti</span>
+      <h1>Scrivici o vieni<br>a trovarci.</h1>
+      <p>Per iscrizioni, prenotazioni sala prove, eventi e collaborazioni.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="mario@email.it" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="oggetto">Oggetto</label>
+            <select id="oggetto" name="oggetto">
+              <option value="">Seleziona...</option>
+              <option value="iscrizione">Iscrizione all'associazione</option>
+              <option value="salaprove">Prenotazione sala prove</option>
+              <option value="evento">Proposta evento</option>
+              <option value="info">Informazioni generali</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Invia messaggio</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-block">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Sede</strong>
+              <p>Via XXX Settembre, Valdidentro (SO)</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info@valdirock.it">info@valdirock.it</a></p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">📱</span>
+            <div>
+              <strong>WhatsApp / Telefono</strong>
+              <p><a href="tel:+39XXXXXXXXXX">+39 XXX XXX XXXX</a></p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">📸</span>
+            <div>
+              <strong>Social</strong>
+              <div class="socials">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">YouTube</a>
+              </div>
+            </div>
+          </div>
+          <div class="membership-card">
+            <h4>Diventa socio</h4>
+            <p>La quota associativa annuale è di <strong>20 €</strong>. Include accesso a tariffe scontate, eventi riservati ai soci e priorità sulla sala prove.</p>
+            <a href="mailto:info@valdirock.it" class="btn-ghost full">Richiedi il modulo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">VALDIROCK</span>
+        <p>Associazione Musicale di Valdidentro<br>C.F. XXXXXXXXXXXXXXXXXX · APS</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Chi siamo</a>
+        <a href="eventi.html">Eventi</a>
+        <a href="salaprove.html">Sala Prove</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+      <p class="footer-copy">© 2025 Valdirock – Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

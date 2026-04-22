@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventi – Valdirock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">VALDIROCK</a>
+      <button class="burger" id="burger" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Chi siamo</a></li>
+        <li><a href="eventi.html" class="active">Eventi</a></li>
+        <li><a href="salaprove.html">Sala Prove</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="contatti.html" class="btn-nav">Iscriviti</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <span class="tag">Calendario</span>
+      <h1>Prossimi eventi</h1>
+      <p>Non perderti nessun concerto, festival o jam session.</p>
+    </div>
+  </div>
+
+  <!-- EVENTS -->
+  <section class="section events">
+    <div class="container">
+      <div class="events-grid">
+
+        <article class="event-card">
+          <div class="event-date">
+            <span class="day">23</span>
+            <span class="month">MAG</span>
+          </div>
+          <div class="event-info">
+            <h3>Valdirock a Rasin</h3>
+            <p class="event-meta">📍 <a href="https://www.google.com/maps/search/Via+Rasin,+Valdidentro,+Sondrio,+Italia" target="_blank" rel="noopener" class="map-link">Via Rasin, Valdidentro (SO)</a> · 🕗 21:00</p>
+            <p class="event-desc">Serata rock nella suggestiva frazione di Rasin. Band locali e musica dal vivo all'aperto.</p>
+            <a href="contatti.html" class="btn-small">Maggiori info</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <span class="day">3–4</span>
+            <span class="month">GIU</span>
+          </div>
+          <div class="event-info">
+            <h3>Rock &amp; Beer a Planecc</h3>
+            <p class="event-meta">📍 <a href="https://www.google.com/maps/search/Planecc,+Premadio,+Valdidentro,+Sondrio,+Italia" target="_blank" rel="noopener" class="map-link">Area Planecc, Premadio – Valdidentro (SO)</a> · 🍺 Due serate</p>
+            <p class="event-desc">Due giorni di musica rock e birre artigianali nell'area Planecc di Premadio. Ingresso libero.</p>
+            <a href="contatti.html" class="btn-small">Maggiori info</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="events-footer">
+        <p>Vuoi proporre un evento o ospitare la tua band?</p>
+        <a href="contatti.html" class="btn-primary">Scrivici</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">VALDIROCK</span>
+        <p>Associazione Musicale di Valdidentro<br>C.F. XXXXXXXXXXXXXXXXXX · APS</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Chi siamo</a>
+        <a href="eventi.html">Eventi</a>
+        <a href="salaprove.html">Sala Prove</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+      <p class="footer-copy">© 2025 Valdirock – Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
